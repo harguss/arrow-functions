@@ -210,17 +210,18 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+ joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+ joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// this new.Student Object itself: Joe
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//  It is the global window object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//The this context is not reset within an arrow function. Arrow functions retain the this value of the enclosing functional scope
+//I need to give Eva credit for these answers which I found on her github.
